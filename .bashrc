@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+[[ -f /etc/profile ]] && . /etc/profile
 [[ -f ~/.profile ]] && . ~/.profile
 
 # don't put duplicate lines or lines starting with space in the history.
